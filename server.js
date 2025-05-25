@@ -11,13 +11,12 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 
-//TODO: add my frontend deployment url ot origin for CORS 
 
 app.use(express.json());
 
 app.use(
   cors({
-    origin:  "http://localhost:5173",
+    origin: [ "http://localhost:5173","spendly-frontend-pi.vercel.app"],
     methods:["GET","POST","PUT","DELETE"],
     allowedHeaders:["Content-Type","Authorization"],
   })
