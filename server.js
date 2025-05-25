@@ -16,8 +16,7 @@ const app = express();
 //database connection
 connectDB();
 
-//cron job
-job.start();
+
 
 //middlewares
 app.use(express.json());
@@ -54,5 +53,17 @@ app.use("/api/v1/dashboard",dashboardRoutes);
 //server uploads folder
 app.use("/uploads",express.static(path.join(__dirname,"uploads")));
 
+// Start cron job (with verification)
+if (job && typeof job.start === 'function') {
+  console.log('Starting cron job...');
+  job.start();
+} else {
+  console.error('Cron job initialization failed!');
+}
+
 const PORT = process.env.PORT || 5000;
-app.listen(PORT , () => console.log(`server is running on port : ${PORT}`));
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
+  console.log(`Cron job next run: ${job.nextDate()}`);
+});
