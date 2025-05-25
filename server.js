@@ -11,16 +11,40 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 
+const corsOptions = {
+  origin: [
+    'http://localhost:5173',  // Vite dev server
+    'http://localhost:3000',  // React dev server (if using Create React App)
+    'http://localhost:5174',  // Alternative Vite port
+    'https://your-frontend-domain.com', 
+  ],
+  credentials: true, 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: [
+    'Content-Type', 
+    'Authorization', 
+    'X-Requested-With',
+    'Accept',
+    'Origin'
+  ],
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
+
+// Handle preflight requests for all routes
+app.options('*', cors(corsOptions));
+
 //middleware to handle cors
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL || "*",
-    methods:["GET","POST","PUT","DELETE"],
-    allowedHeaders:["Content-Type","Authorization"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: process.env.CLIENT_URL || "*",
+//     methods:["GET","POST","PUT","DELETE"],
+//     allowedHeaders:["Content-Type","Authorization"],
+//   })
+// );
 
 connectDB();
 
