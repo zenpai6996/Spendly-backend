@@ -2,8 +2,8 @@
   <defs>
     <!-- Background gradient -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#059212;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFDB00;stop-opacity:1" />
     </linearGradient>
     
     <!-- Card gradient -->
@@ -84,16 +84,16 @@
   <!-- Tags -->
   <g transform="translate(280, 125)">
     <!-- Backend tag -->
-    <rect x="0" y="0" width="60" height="20" rx="10" fill="rgba(34, 197, 94, 0.2)" stroke="#22c55e" stroke-width="1"/>
-    <text x="30" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#22c55e">BACKEND</text>
+    <rect x="0" y="0" width="60" height="20" rx="10" fill="rgba(204, 102, 255, 0.2)" stroke="#AF47D2" stroke-width="1"/>
+    <text x="30" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#AF47D2">BACKEND</text>
     
     <!-- API tag -->
     <rect x="70" y="0" width="35" height="20" rx="10" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="1"/>
     <text x="87.5" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#3b82f6">API</text>
     
     <!-- Finance tag -->
-    <rect x="115" y="0" width="55" height="20" rx="10" fill="rgba(251, 191, 36, 0.2)" stroke="#fbbf24" stroke-width="1"/>
-    <text x="142.5" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#fbbf24">FINANCE</text>
+    <rect x="115" y="0" width="55" height="20" rx="10" fill="rgba(255, 143, 0, 0.2)" stroke="#FF8F00" stroke-width="1"/>
+    <text x="142.5" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FFDB00">FINANCE</text>
   </g>
   
   <!-- Decorative code brackets -->
