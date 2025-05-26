@@ -670,7 +670,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
 ### File Uploads
-Profile image uploads support common image formats (JPEG, PNG, GIF) with a maximum file size of 5MB.
+Profile image uploads support common image formats (JPEG, PNG, JPG) with a maximum file size of 5MB.
 
 ### Excel Downloads
 Downloaded Excel files contain formatted data with appropriate headers and styling for easy analysis.
