@@ -155,7 +155,7 @@ npm run test:coverage
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
+Contributions are welcome ! Here's how you can help:
 
 <div align="center">
 
