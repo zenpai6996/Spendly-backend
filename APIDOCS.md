@@ -1,6 +1,8 @@
-# 📚 Spendly API Documentation
 
 <div align="center">
+
+
+[![API DOCS](./api-banner.svg)](https://github.com/zenpai6996/Spendly-backend)
 
 ![API Version](https://img.shields.io/badge/API%20Version-v1.0-6366f1?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-10b981?style=for-the-badge)
@@ -749,5 +751,5 @@ income_response = requests.post(
 **Need help?** [Open an issue](https://github.com/zenpai6996/Spendly-backend/issues) • [View Source Code](https://github.com/zenpai6996/Spendly-backend)
 
 **[⬅️ Back to Main README](README.md)**
-
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:5433FF,50:20BDFF,100:A5FECB&height=120&section=footer&fontSize=42&fontColor=ffffff&animation=fadeIn" width="100%">
 </div>
