@@ -178,8 +178,6 @@ We welcome contributions! Here's how you can help:
 This project is licensed under the [MIT License](LICENSE) - see the license file for details.
 
 
----
-
 <div align="center">
-
-**Built with ❤️ by Souharda**
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:5433FF,50:20BDFF,100:A5FECB&height=120&section=footer&fontSize=42&fontColor=ffffff&animation=fadeIn" width="100%">
+</div>
