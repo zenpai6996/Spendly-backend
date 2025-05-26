@@ -29,13 +29,16 @@
 
 ## 🛠️ Tech Stack
 
-| Tech         | Description           |
+| Tech         | Description          |
 | ------------ | -------------------- |
 | Node.js      | JavaScript runtime   |
 | Express.js   | Web framework        |
 | MongoDB      | Database             |
 | Mongoose     | ODM for MongoDB      |
 | Multer       | File uploads         |
+| Cron         | Running CRON Jobs    |
+| bcryptjs     | Password Hashing     |
+| jsonwebtoken | JWT Authentication   |
 
 ---
 
@@ -70,10 +73,9 @@ Copy `.env.example` to `.env` and fill in your configuration.
 
 | Method | Route             | Description                   |
 | ------ | ---------------- | ----------------------------- |
-| POST   | /api/auth/login  | User login                    |
-| POST   | /api/auth/signup | User registration             |
-| GET    | /api/transactions | List all transactions         |
-| POST   | /api/transactions | Create a transaction          |
+| POST   | /auth/login      | User login                    |
+| POST   | /auth/signup     | User registration             |
+| GET    | /auth/getUser    | User Information              |
 | ...    | ...               | ...                           |
 
 _For full API details, see the [API docs](#)_
