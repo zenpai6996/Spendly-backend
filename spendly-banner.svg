@@ -78,7 +78,7 @@
   
   <!-- Subtitle -->
   <text x="280" y="110" font-family="Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">
-    Powerful expense tracking API built with modern technologies
+    Powerful Finance tracking REST API built with modern technologies
   </text>
   
   <!-- Tags -->
@@ -101,9 +101,6 @@
     <text font-family="monospace" font-size="24" font-weight="bold">{ }</text>
   </g>
   
-  <!-- API endpoint hint -->
-  <g transform="translate(580, 90)">
-    <rect x="0" y="0" width="140" height="25" rx="12" fill="rgba(0,0,0,0.2)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-    <text x="70" y="16" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.8)">/api/v1/expenses</text>
-  </g>
+
+ 
 </svg>
