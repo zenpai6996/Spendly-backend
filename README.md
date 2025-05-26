@@ -141,15 +141,7 @@ spendly-backend/
 └── 📄 package.json         # Project dependencies
 ```
 
-## 🧪 Testing
 
-```bash
-# Run tests
-npm test
-
-# Run tests with coverage
-npm run test:coverage
-```
 
 
 
@@ -165,7 +157,7 @@ Contributions are welcome ! Here's how you can help:
 
 </div>
 
-### Development Workflow
+### 🧑‍💻 Development Workflow
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
