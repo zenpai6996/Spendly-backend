@@ -4,15 +4,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/zenpai6996/Spendly-backend/stargazers">
-    <img src="https://img.shields.io/github/stars/zenpai6996/Spendly-backend?style=for-the-badge&color=FFD700" alt="Stars"/>
-  </a>
-  <a href="https://github.com/zenpai6996/Spendly-backend/network/members">
-    <img src="https://img.shields.io/github/forks/zenpai6996/Spendly-backend?style=for-the-badge&color=00BFFF" alt="Forks"/>
-  </a>
-  <a href="https://github.com/zenpai6996/Spendly-backend/issues">
-    <img src="https://img.shields.io/github/issues/zenpai6996/Spendly-backend?style=for-the-badge&color=FF6347" alt="Issues"/>
-  </a>
   <a href="https://github.com/zenpai6996/Spendly-backend/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/zenpai6996/Spendly-backend?style=for-the-badge&color=32CD32" alt="License"/>
   </a>
@@ -107,7 +98,9 @@ Please open issues and submit pull requests.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
+
+
 
 ---
 
