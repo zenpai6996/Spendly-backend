@@ -1,113 +1,184 @@
-<!-- Banner SVG -->
-<p align="center">
-  <img src="https://svg-banners.vercel.app/api?type=origin&text1=Spendly%20Backend%20API%20🚀&width=800&height=200" alt="Spendly Backend Banner"/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/zenpai6996/Spendly-backend/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/zenpai6996/Spendly-backend?style=for-the-badge&color=32CD32" alt="License"/>
-  </a>
-</p>
-
----
-
 # 💸 Spendly Backend
 
-**Backend for my Finance tracker app. Manage your expenses, income, and budgets with ease!**
+<div align="center">
+
+[![License](https://img.shields.io/github/license/zenpai6996/Spendly-backend?style=for-the-badge&color=6366f1&labelColor=1e293b)](https://github.com/zenpai6996/Spendly-backend/blob/main/LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com/)
+[![Express.js](https://img.shields.io/badge/Express.js-4.18+-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+
+*A robust, scalable backend API for personal finance management*
+
+[📚 **API Documentation**](./APIDOCS.md) • [🚀 **Getting Started**](#-quick-start) • [🤝 **Contributing**](#-contributing)
+
+</div>
 
 ---
 
-## 🚀 Features
+## ✨ Overview
 
-- RESTful API for managing users, transactions, and budgets
-- Authentication & Authorization
-- Modular Express.js architecture
-- MongoDB integration
-- File uploads support
+Spendly Backend is a powerful REST API designed for modern finance tracking applications. Built with enterprise-grade architecture, it provides secure user management, transaction handling, and comprehensive financial analytics.
 
----
+## 🎯 Key Features
 
-## 🛠️ Tech Stack
+<table>
+<tr>
+<td width="50%">
 
-| Tech         | Description          |
-| ------------ | -------------------- |
-| Node.js      | JavaScript runtime   |
-| Express.js   | Web framework        |
-| MongoDB      | Database             |
-| Mongoose     | ODM for MongoDB      |
-| Multer       | File uploads         |
-| Cron         | Running CRON Jobs    |
-| bcryptjs     | Password Hashing     |
-| jsonwebtoken | JWT Authentication   |
+### 🔐 **Authentication & Security**
+- JWT-based authentication
+- Secure password hashing with bcrypt
+- Protected route middleware
+- Profile image upload support
 
----
+### 📊 **Financial Management**
+- Income & expense tracking
+- Real-time dashboard analytics
+- Historical transaction data
+- Excel export functionality
 
-## ⚡ Getting Started
+</td>
+<td width="50%">
+
+### 🏗️ **Architecture**
+- RESTful API design
+- Modular Express.js structure
+- MongoDB with Mongoose ODM
+- Automated CRON jobs
+
+### 📈 **Analytics**
+- 30-day expense summaries
+- 60-day income tracking
+- Transaction categorization
+- Balance calculations
+
+</td>
+</tr>
+</table>
+
+## 🛠️ Technology Stack
+
+<div align="center">
+
+| **Backend** | **Database** | **Authentication** | **Utils** |
+|:-----------:|:------------:|:------------------:|:---------:|
+| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) | ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white) | ![Multer](https://img.shields.io/badge/Multer-FF6B6B?style=for-the-badge) |
+| ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) | ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white) | ![bcrypt](https://img.shields.io/badge/bcrypt-4A90E2?style=for-the-badge) | ![node-cron](https://img.shields.io/badge/Cron-FF9500?style=for-the-badge) |
+
+</div>
+
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js (v16+)
-- npm
-- MongoDB
+Ensure you have the following installed:
+- **Node.js** v18.0.0 or higher
+- **npm** v8.0.0 or higher  
+- **MongoDB** v4.4 or higher
 
 ### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/zenpai6996/Spendly-backend.git
+   cd Spendly-backend
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Environment setup**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+4. **Start the server**
+   ```bash
+   npm start
+   ```
+
+The API will be available at `http://localhost:3000/api/v1/`
+
+## 📋 API Overview
+
+<div align="center">
+
+| **Category** | **Endpoints** | **Description** |
+|:------------:|:-------------:|:---------------:|
+| 🔐 **Auth** | 4 endpoints | User authentication & profile management |
+| 📊 **Dashboard** | 1 endpoint | Financial overview & analytics |
+| 💰 **Income** | 4 endpoints | Income tracking & management |
+| 💸 **Expense** | 4 endpoints | Expense tracking & categorization |
+
+</div>
+
+**Quick API Reference:**
+
+```http
+POST   /api/v1/auth/register     # User registration
+POST   /api/v1/auth/login        # User login
+GET    /api/v1/dashboard         # Financial dashboard
+POST   /api/v1/income/add        # Add income transaction
+POST   /api/v1/expense/add       # Add expense transaction
 ```
-git clone https://github.com/zenpai6996/Spendly-backend.git
-cd Spendly-backend
-npm install
+
+> 📚 **[View Complete API Documentation →](./APIDOCS.md)**
+
+## 🏗️ Project Structure
+
+```
+spendly-backend/
+├── 📁 controllers/          # Request handlers
+├── 📁 middleware/           # Custom middleware
+├── 📁 models/              # Database schemas
+├── 📁 routes/              # API routes
+├── 📁 utils/               # Helper functions
+├── 📄 server.js            # Application entry point
+└── 📄 package.json         # Project dependencies
+```
+
+## 🧪 Testing
+
+```bash
+# Run tests
+npm test
+
+# Run tests with coverage
+npm run test:coverage
 ```
 
 
-### Environment Variables
-
-Copy `.env.example` to `.env` and fill in your configuration.
-
-### Running the Server
-
-```npm start```
-
-
----
-
-## 📚 API Endpoints
-
-| Method | Route             | Description                   |
-| ------ | ---------------- | ----------------------------- |
-| POST   | /auth/login      | User login                    |
-| POST   | /auth/signup     | User registration             |
-| GET    | /auth/getUser    | User Information              |
-| ...    | ...               | ...                           |
-
-_For full API details, see the [📚 Full API Documentation](./APIDOCS.md)
-
-
----
 
 ## 🤝 Contributing
 
-Contributions are welcome!  
-Please open issues and submit pull requests.
+We welcome contributions! Here's how you can help:
 
-<p align="center">
-  <a href="https://github.com/zenpai6996/Spendly-backend/fork">
-    <img src="https://img.shields.io/badge/Fork%20me%20on%20GitHub-30363D?style=for-the-badge&logo=github&logoColor=white" alt="Fork"/>
-  </a>
-  <a href="https://github.com/zenpai6996/Spendly-backend/issues/new">
-    <img src="https://img.shields.io/badge/Open%20Issue-FF6347?style=for-the-badge" alt="Open Issue"/>
-  </a>
-</p>
+<div align="center">
 
----
+[![Fork](https://img.shields.io/badge/Fork%20Repository-6366f1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zenpai6996/Spendly-backend/fork)
+[![Issues](https://img.shields.io/badge/Report%20Issues-ef4444?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zenpai6996/Spendly-backend/issues)
+[![Pull Request](https://img.shields.io/badge/Create%20PR-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zenpai6996/Spendly-backend/pulls)
+
+</div>
+
+### Development Workflow
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
-
+This project is licensed under the [MIT License](LICENSE) - see the license file for details.
 
 
 ---
 
-<!-- Footer SVG -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=4000&pause=1000&color=00BFFF&center=true&vCenter=true&width=600&lines=Happy+Tracking+with+Spendly+Backend!;Star+the+repo+if+you+like+it+%F0%9F%92%AF" alt="Footer"/>
-</p>
+<div align="center">
+
+**Built with ❤️ by Souharda**
