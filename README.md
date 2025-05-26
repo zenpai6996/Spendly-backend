@@ -78,7 +78,8 @@ Copy `.env.example` to `.env` and fill in your configuration.
 | GET    | /auth/getUser    | User Information              |
 | ...    | ...               | ...                           |
 
-_For full API details, see the [API docs](#)_
+_For full API details, see the [📚 Full API Documentation](./APIDOCS.md)
+
 
 ---
 
