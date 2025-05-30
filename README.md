@@ -12,6 +12,9 @@
 
 [📚 **API Documentation**](./APIDOCS.md) • [🚀 **Getting Started**](#-quick-start) • [🤝 **Contributing**](#-contributing)
 
+[![GitHub Repo](https://badgen.net/badge/icon/github?icon=github&label=Spendly%20Frontend)](https://github.com/zenpai6996/Spendly-frontend)
+
+
 </div>
 
 ---
