@@ -34,15 +34,15 @@ app.use(
   })
 );
 
-// app.options('*', cors());
 
-
-// app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', 'https://spendly-frontend-pi.vercel.app');
-//   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-//   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//   next();
-// });
+app.get('/', (req, res) => {
+  res.json({ 
+    message: "Spendly Backend API is running successfully!",
+    status: "active",
+    version: "1.0.0",
+    timestamp: new Date().toISOString()
+  });
+});
 
 //Routes
 app.use("/api/v1/auth",authRoutes);
